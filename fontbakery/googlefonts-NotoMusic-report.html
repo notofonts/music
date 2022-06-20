@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>4</td>
+                <td>9</td>
+                <td>116</td>
+                <td>8</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>2%</td>
+                <td>5%</td>
+                <td>65%</td>
+                <td>4%</td>
+                <td>55%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Google Fonts&gt; 🔥🔥🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Check Google Fonts glyph coverage.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/glyph_coverage&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x00AF (MACRON)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<h3>Check copyright namerecords match license file.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/license&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL&quot; [code: wrong]</p>
+</span></li></ul></div></details>
+<h3>Glyphs are similiar to Google Fonts version?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/production_glyphs_similarity&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Following glyphs differ greatly from Google Fonts version:
+* uni266F and uni266E</p>
+</span></li></ul></div></details>
+<h3>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/os2/use_typo_metrics&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf']. [code: missing-os2-fsselection-bit7]</p>
+</span></li></ul></div></details>
+<h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; 🔥⚠️⚠️⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinAscent value should be equal or greater than 1645, but got 1389 instead [code: ascent]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 709, but got 398 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<pre><code>- uni00A0.1
+</code></pre>
+<p>[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h3>Check if each glyph has the recommended amount of contours.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+
+- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️</h2>
+<h3>Check mark characters are in GDEF mark glyph class.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_mark_chars&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]</p>
+</span></li></ul></div></details>
+<h3>Check GDEF mark glyph class doesn't have characters that are not marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_non_mark_chars&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+1D165, U+1D166, U+1D16D, U+1D16E, U+1D16F, U+1D170, U+1D171 and U+1D172 [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️</h2>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
+<pre><code>* u1D06D (U+1D06D): L&lt;&lt;426.0,-7.0&gt;--&lt;408.0,-4.0&gt;&gt; -&gt; L&lt;&lt;408.0,-4.0&gt;--&lt;391.0,0.0&gt;&gt;
+
+* u1D071 (U+1D071): L&lt;&lt;319.0,73.0&gt;--&lt;307.0,73.0&gt;&gt; -&gt; L&lt;&lt;307.0,73.0&gt;--&lt;266.0,74.0&gt;&gt;
+
+* u1D075 (U+1D075): L&lt;&lt;163.0,50.0&gt;--&lt;149.0,47.0&gt;&gt; -&gt; L&lt;&lt;149.0,47.0&gt;--&lt;128.0,44.0&gt;&gt;
+
+* u1D077 (U+1D077): L&lt;&lt;185.0,121.0&gt;--&lt;133.0,121.0&gt;&gt; -&gt; L&lt;&lt;133.0,121.0&gt;--&lt;103.0,122.0&gt;&gt;
+
+* u1D077 (U+1D077): L&lt;&lt;322.0,114.0&gt;--&lt;185.0,121.0&gt;&gt; -&gt; L&lt;&lt;185.0,121.0&gt;--&lt;133.0,121.0&gt;&gt;
+
+* u1D09F (U+1D09F): L&lt;&lt;215.0,360.0&gt;--&lt;216.0,349.0&gt;&gt; -&gt; L&lt;&lt;216.0,349.0&gt;--&lt;216.0,346.0&gt;&gt;
+
+* u1D0AA (U+1D0AA): L&lt;&lt;325.0,276.0&gt;--&lt;355.0,273.0&gt;&gt; -&gt; L&lt;&lt;355.0,273.0&gt;--&lt;452.0,258.0&gt;&gt;
+
+* u1D0AA (U+1D0AA): L&lt;&lt;452.0,258.0&gt;--&lt;469.0,258.0&gt;&gt; -&gt; L&lt;&lt;469.0,258.0&gt;--&lt;491.0,260.0&gt;&gt;
+
+* u1D0B5 (U+1D0B5): L&lt;&lt;106.0,131.0&gt;--&lt;106.0,134.0&gt;&gt; -&gt; L&lt;&lt;106.0,134.0&gt;--&lt;110.0,226.0&gt;&gt;
+
+* u1D1E9 (U+1D1E9): L&lt;&lt;226.0,216.0&gt;--&lt;275.0,179.0&gt;&gt; -&gt; L&lt;&lt;275.0,179.0&gt;--&lt;314.0,150.0&gt;&gt; 
+
+* And u1D1E9 (U+1D1E9): L&lt;&lt;314.0,150.0&gt;--&lt;275.0,121.0&gt;&gt; -&gt; L&lt;&lt;275.0,121.0&gt;--&lt;226.0,84.0&gt;&gt; [code: found-colinear-vectors]
+</code></pre>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:</p>
+<pre><code>* u1D050 (U+1D050): B&lt;&lt;315.5,514.0&gt;-&lt;262.0,490.0&gt;-&lt;197.0,485.0&gt;&gt;/B&lt;&lt;197.0,485.0&gt;-&lt;228.0,485.0&gt;-&lt;253.0,474.5&gt;&gt; = 4.398705354995508
+
+* u1D05E (U+1D05E): B&lt;&lt;311.0,496.0&gt;-&lt;311.0,518.0&gt;-&lt;331.0,521.0&gt;&gt;/L&lt;&lt;331.0,521.0&gt;--&lt;113.0,521.0&gt;&gt; = 8.530765609948139
+
+* u1D061 (U+1D061): B&lt;&lt;287.0,137.0&gt;-&lt;287.0,117.0&gt;-&lt;274.0,107.0&gt;&gt;/B&lt;&lt;274.0,107.0&gt;-&lt;356.0,156.0&gt;-&lt;456.0,156.0&gt;&gt; = 6.707700340478021
+
+* u1D06B (U+1D06B): L&lt;&lt;144.0,108.0&gt;--&lt;103.0,110.0&gt;&gt;/B&lt;&lt;103.0,110.0&gt;-&lt;193.0,118.0&gt;-&lt;257.5,146.5&gt;&gt; = 7.87231022572785
+
+* u1D078 (U+1D078): B&lt;&lt;371.0,114.5&gt;-&lt;380.0,123.0&gt;-&lt;388.0,124.0&gt;&gt;/L&lt;&lt;388.0,124.0&gt;--&lt;322.0,124.0&gt;&gt; = 7.125016348901757
+
+* u1D079 (U+1D079): B&lt;&lt;336.0,101.0&gt;-&lt;336.0,120.0&gt;-&lt;360.0,124.0&gt;&gt;/L&lt;&lt;360.0,124.0&gt;--&lt;288.0,124.0&gt;&gt; = 9.462322208025613
+
+* u1D09E (U+1D09E): B&lt;&lt;310.0,331.0&gt;-&lt;277.0,331.0&gt;-&lt;274.0,372.0&gt;&gt;/B&lt;&lt;274.0,372.0&gt;-&lt;270.0,338.0&gt;-&lt;240.0,338.0&gt;&gt; = 10.894752932875335
+
+* u1D0A3 (U+1D0A3): L&lt;&lt;212.0,210.0&gt;--&lt;215.0,222.0&gt;&gt;/B&lt;&lt;215.0,222.0&gt;-&lt;196.0,180.0&gt;-&lt;142.0,180.0&gt;&gt; = 10.304846468766044
+
+* u1D0AE (U+1D0AE): B&lt;&lt;266.5,445.0&gt;-&lt;253.0,438.0&gt;-&lt;226.0,434.0&gt;&gt;/B&lt;&lt;226.0,434.0&gt;-&lt;237.0,433.0&gt;-&lt;244.5,430.0&gt;&gt; = 13.621397929215435
+
+* u1D0B2 (U+1D0B2): B&lt;&lt;409.0,203.0&gt;-&lt;409.0,217.0&gt;-&lt;416.0,242.0&gt;&gt;/B&lt;&lt;416.0,242.0&gt;-&lt;403.0,206.0&gt;-&lt;355.0,206.0&gt;&gt; = 4.212967912112212 
+
+* And 7 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<pre><code>* u1D096 (U+1D096): L&lt;&lt;485.0,581.0&gt;--&lt;362.0,582.0&gt;&gt; 
+
+* And u1D0A1 (U+1D0A1): L&lt;&lt;518.0,484.0&gt;--&lt;396.0,485.0&gt;&gt; [code: found-semi-vertical]
+</code></pre>
+</span></li></ul></div></details>
+                    </body>
+                </html>

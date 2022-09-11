@@ -1,5 +1,5 @@
 {
-.appVersion = "1359";
+.appVersion = "3109";
 classes = (
 {
 code = "u1D160 u1D161 u1D162 u1D163 u1D164 u1D1BD u1D1BE u1D1BF u1D1C0";
@@ -665,6 +665,10 @@ value = (
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = vendorID;
 value = GOOG;
 },
@@ -689,8 +693,17 @@ name = versionString;
 value = "Version 2.002";
 },
 {
-name = "Use Typo Metrics";
-value = 1;
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+},
+{
+Name = Width;
+Tag = wdth;
+}
+);
 }
 );
 date = "2022-02-22 17:16:27 +0000";
@@ -918,7 +931,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -39230,11 +39243,11 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1389;
+value = 1645;
 },
 {
 name = winDescent;
-value = 398;
+value = 709;
 },
 {
 name = hheaAscender;

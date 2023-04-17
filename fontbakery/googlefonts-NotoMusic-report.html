@@ -73,36 +73,41 @@
             </tr>
             <tr>
                 <td>0</td>
-                <td>0</td>
+                <td>3</td>
                 <td>8</td>
-                <td>111</td>
+                <td>116</td>
                 <td>7</td>
-                <td>101</td>
+                <td>108</td>
             </tr>
             <tr>
                 <td>0%</td>
-                <td>0%</td>
-                <td>5%</td>
+                <td>2%</td>
+                <td>4%</td>
                 <td>65%</td>
                 <td>4%</td>
-                <td>59%</td>
+                <td>61%</td>
             </tr>
             </table>
             
 <p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
-<h2>&lt;Section: Google Fonts&gt; ⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
-<h3>Glyphs are similiar to Google Fonts version?</h3>
-<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/production_glyphs_similarity&gt;</div>
+<h2>&lt;Section: Google Fonts&gt; 🔥🔥⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Version number has increased since previous release on Google Fonts?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/version_bump&gt;</div>
 
-<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Following glyphs differ greatly from Google Fonts version:
-* uni266E and uni266F</p>
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Version number 2.0019989013671875 is equal to version on Google Fonts.</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Version number 2.0019989013671875 is equal to version on Google Fonts GitHub repo.</p>
 </span></li></ul></div></details>
 <h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
 
 <details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
 </span></li></ul></div></details>
-<h2>&lt;Section: Universal&gt; ⚠️⚠️⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Noto fonts must have an ARTICLE.en_us.html file</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/noto_has_article&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; 🔥⚠️⚠️⚠️⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
 <h3>Check font contains no unreachable glyphs</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
 
@@ -122,9 +127,24 @@
 
 - Glyph name: aogonek	Contours detected: 3	Expected: 2 
 
-- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
 </code></pre>
 <p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<h3>Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_dotted&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌</p>
+<p>The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]</p>
+</span></li></ul></div></details>
+<h3>Check math signs have the same width.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/math_signs_width&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 572 among a set of 6 math glyphs.
+The following math glyphs have a different width, though:</p>
+<p>Width = 322:
+minus
+[code: width-outliers]</p>
 </span></li></ul></div></details>
 <h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️</h2>
 <h3>Check GDEF mark glyph class doesn't have characters that are not marks.</h3>
@@ -158,7 +178,7 @@ U+1D165, U+1D166, U+1D16D, U+1D16E, U+1D16F, U+1D170, U+1D171 and U+1D172 [code:
 
 * u1D1E9 (U+1D1E9): L&lt;&lt;226.0,216.0&gt;--&lt;275.0,179.0&gt;&gt; -&gt; L&lt;&lt;275.0,179.0&gt;--&lt;314.0,150.0&gt;&gt; 
 
-* And u1D1E9 (U+1D1E9): L&lt;&lt;314.0,150.0&gt;--&lt;275.0,121.0&gt;&gt; -&gt; L&lt;&lt;275.0,121.0&gt;--&lt;226.0,84.0&gt;&gt; [code: found-colinear-vectors]
+* u1D1E9 (U+1D1E9): L&lt;&lt;314.0,150.0&gt;--&lt;275.0,121.0&gt;&gt; -&gt; L&lt;&lt;275.0,121.0&gt;--&lt;226.0,84.0&gt;&gt; [code: found-colinear-vectors]
 </code></pre>
 </span></li></ul></div></details>
 <h3>Do outlines contain any jaggy segments?</h3>
@@ -185,7 +205,7 @@ U+1D165, U+1D166, U+1D16D, U+1D16E, U+1D16F, U+1D170, U+1D171 and U+1D172 [code:
 
 * u1D0B2 (U+1D0B2): B&lt;&lt;409.0,203.0&gt;-&lt;409.0,217.0&gt;-&lt;416.0,242.0&gt;&gt;/B&lt;&lt;416.0,242.0&gt;-&lt;403.0,206.0&gt;-&lt;355.0,206.0&gt;&gt; = 4.212967912112212 
 
-* And 7 more.
+* 7 more.
 </code></pre>
 <p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
 </span></li></ul></div></details>
@@ -195,7 +215,7 @@ U+1D165, U+1D166, U+1D16D, U+1D16E, U+1D16F, U+1D170, U+1D171 and U+1D172 [code:
 <details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
 <pre><code>* u1D096 (U+1D096): L&lt;&lt;485.0,581.0&gt;--&lt;362.0,582.0&gt;&gt; 
 
-* And u1D0A1 (U+1D0A1): L&lt;&lt;518.0,484.0&gt;--&lt;396.0,485.0&gt;&gt; [code: found-semi-vertical]
+* u1D0A1 (U+1D0A1): L&lt;&lt;518.0,484.0&gt;--&lt;396.0,485.0&gt;&gt; [code: found-semi-vertical]
 </code></pre>
 </span></li></ul></div></details>
                     </body>

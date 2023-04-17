@@ -1,9 +1,6 @@
 {
 .appVersion = "3180";
 .formatVersion = 3;
-DisplayStrings = (
-"𝁇𝁏𝃳𝁿𝅙𝃴"
-);
 axes = (
 {
 name = Weight;
@@ -1293,9 +1290,17 @@ lookup ContextualGPOS31 {
     pos @class6' [u1D167 u1D168 u1D169]' @class43' @class64' lookup SinglePositioning35;
 } ContextualGPOS31;
 
-lookup DoubleStaccato {
-	pos u1D17C' <-75 0 0 0> u1D17C' <75 0 0 0>;
-} DoubleStaccato;
+@stac = [
+	u1D17C # Staccato
+	# Room for more if it turns out we need them
+];
+
+lookup MultipleStaccato {
+	pos @stac' <-225 0 0 0> @stac' <-75 0 0 0> @stac' <75 0 0 0> @stac' <225 0 0 0>;
+	pos @stac' <-150 0 0 0> @stac' @stac' <150 0 0 0>;
+	pos @stac' <-75 0 0 0> @stac' <75 0 0 0>;
+} MultipleStaccato;
+
 
 
 ";

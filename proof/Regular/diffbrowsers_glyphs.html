@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+
+	  
+
+	  
+	    @font-face{
+    src: url(NotoMusic-Regular.ttf);
+    font-family: "Noto Music";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+
+	  
+	    .Regular{
+    font-family: "Noto Music", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+	
+.cell{
+  position: relative;
+  z-index: -1;
+  float: left;
+  background-color: #fcfcfc;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 30.0px;
+  line-height: 30.0px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Text</b>
+</h2>
+	
+  
+      <div class="box">
+	<div class="box-title">Regular 20pt</div>
+	  <span class="Regular" style="font-size: 20pt">
+	    
+	      <div class="cell">𝂲</div>
+	    
+	      <div class="cell">𝆹𝅥𝅯</div>
+	    
+	      <div class="cell">𝃛</div>
+	    
+	      <div class="cell">𝆘</div>
+	    
+	      <div class="cell">𝇉</div>
+	    
+	      <div class="cell">𝈌</div>
+	    
+	      <div class="cell">𝄑</div>
+	    
+	      <div class="cell">𝂘</div>
+	    
+	      <div class="cell">𝆕</div>
+	    
+	      <div class="cell">𝁄</div>
+	    
+	      <div class="cell">𝁒</div>
+	    
+	      <div class="cell">𝈲</div>
+	    
+	      <div class="cell">𝅽</div>
+	    
+	      <div class="cell">𝃙</div>
+	    
+	      <div class="cell">𝈸</div>
+	    
+	      <div class="cell">𝄡</div>
+	    
+	      <div class="cell">𝅺</div>
+	    
+	      <div class="cell">𝄓</div>
+	    
+	      <div class="cell">𝀶</div>
+	    
+	      <div class="cell">𝅘</div>
+	    
+	      <div class="cell">𝇘</div>
+	    
+	      <div class="cell">𝇣</div>
+	    
+	      <div class="cell">𝁟</div>
+	    
+	      <div class="cell">𝀻</div>
+	    
+	      <div class="cell">𝅛</div>
+	    
+	      <div class="cell">𝆁</div>
+	    
+	      <div class="cell">𝂋</div>
+	    
+	      <div class="cell">𝈄</div>
+	    
+	      <div class="cell">♮</div>
+	    
+	      <div class="cell">𝂵</div>
+	    
+	      <div class="cell">𝀮</div>
+	    
+	      <div class="cell">𝀕</div>
+	    
+	      <div class="cell">𝅨</div>
+	    
+	      <div class="cell">𝆟</div>
+	    
+	      <div class="cell">𝀧</div>
+	    
+	      <div class="cell">𝁅</div>
+	    
+	      <div class="cell">𝆎</div>
+	    
+	      <div class="cell">𝆹𝅥𝅮</div>
+	    
+	      <div class="cell">𝂽</div>
+	    
+	      <div class="cell">𝆥</div>
+	    
+	      <div class="cell">𝃓</div>
+	    
+	      <div class="cell">𝈋</div>
+	    
+	      <div class="cell">𝁓</div>
+	    
+	      <div class="cell">𝃏</div>
+	    
+	      <div class="cell">𝈪</div>
+	    
+	      <div class="cell">𝂔</div>
+	    
+	      <div class="cell">𝁩</div>
+	    
+	      <div class="cell">𝀱</div>
+	    
+	      <div class="cell">𝅮</div>
+	    
+	      <div class="cell">𝁏</div>
+	    
+	      <div class="cell">𝄝</div>
+	    
+	      <div class="cell">𝅿</div>
+	    
+	      <div class="cell">𝆺</div>
+	    
+	      <div class="cell">𝅧</div>
+	    
+	      <div class="cell">𝅰</div>
+	    
+	      <div class="cell">𝀆</div>
+	    
+	      <div class="cell">𝁹</div>
+	    
+	      <div class="cell">𝀛</div>
+	    
+	      <div class="cell">𝂼</div>
+	    
+	      <div class="cell">𝄯</div>
+	    
+	      <div class="cell">𝈍</div>
+	    
+	      <div class="cell">𝇆</div>
+	    
+	      <div class="cell">𝅚</div>
+	    
+	      <div class="cell">𝄦</div>
+	    
+	      <div class="cell">𝂜</div>
+	    
+	      <div class="cell">𝈱</div>
+	    
+	      <div class="cell">𝆹</div>
+	    
+	      <div class="cell">♬</div>
+	    
+	      <div class="cell">𝂊</div>
+	    
+	      <div class="cell">𝀎</div>
+	    
+	      <div class="cell">𝅘𝅥𝅱</div>
+	    
+	      <div class="cell">𝄗</div>
+	    
+	      <div class="cell">𝆒</div>
+	    
+	      <div class="cell">𝉅</div>
+	    
+	      <div class="cell">𝂩</div>
+	    
+	      <div class="cell">𝄭</div>
+	    
+	      <div class="cell">𝇝</div>
+	    
+	      <div class="cell">𝆮</div>
+	    
+	      <div class="cell">𝄃</div>
+	    
+	      <div class="cell">𝄰</div>
+	    
+	      <div class="cell">𝇗</div>
+	    
+	      <div class="cell">𝇡</div>
+	    
+	      <div class="cell">𝃂</div>
+	    
+	      <div class="cell">𝀌</div>
+	    
+	      <div class="cell">𝂪</div>
+	    
+	      <div class="cell">𝁇</div>
+	    
+	      <div class="cell">𝈼</div>
+	    
+	      <div class="cell">𝁔</div>
+	    
+	      <div class="cell">𝂸</div>
+	    
+	      <div class="cell">𝄱</div>
+	    
+	      <div class="cell">𝀝</div>
+	    
+	      <div class="cell">𝁻</div>
+	    
+	      <div class="cell">𝁖</div>
+	    
+	      <div class="cell">𝀗</div>
+	    
+	      <div class="cell">𝁞</div>
+	    
+	      <div class="cell">𝁈</div>
+	    
+	      <div class="cell">𝃭</div>
+	    
+	      <div class="cell">𝁬</div>
+	    
+	      <div class="cell">𝅓</div>
+	    
+	      <div class="cell">𝀀</div>
+	    
+	      <div class="cell">𝂖</div>
+	    
+	      <div class="cell">𝈝</div>
+	    
+	      <div class="cell">◌</div>
+	    
+	      <div class="cell">𝀽</div>
+	    
+	      <div class="cell">𝆉</div>
+	    
+	      <div class="cell">𝆓</div>
+	    
+	      <div class="cell">𝅶</div>
+	    
+	      <div class="cell">𝀨</div>
+	    
+	      <div class="cell">𝈓</div>
+	    
+	      <div class="cell">𝄈</div>
+	    
+	      <div class="cell">𝄷</div>
+	    
+	      <div class="cell">𝅇</div>
+	    
+	      <div class="cell">𝄺</div>
+	    
+	      <div class="cell">𝄹</div>
+	    
+	      <div class="cell">𝅭</div>
+	    
+	      <div class="cell">𝀐</div>
+	    
+	      <div class="cell">𝄏</div>
+	    
+	      <div class="cell">𝅘𝅥𝅲</div>
+	    
+	      <div class="cell">𝂦</div>
+	    
+	      <div class="cell">𝄌</div>
+	    
+	      <div class="cell">𝁆</div>
+	    
+	      <div class="cell">𝈕</div>
+	    
+	      <div class="cell">𝄾</div>
+	    
+	      <div class="cell">𝈑</div>
+	    
+	      <div class="cell">𝅕</div>
+	    
+	      <div class="cell">𝆷</div>
+	    
+	      <div class="cell">𝆝</div>
+	    
+	      <div class="cell">𝄕</div>
+	    
+	      <div class="cell">𝀑</div>
+	    
+	      <div class="cell">𝈊</div>
+	    
+	      <div class="cell">𝆱</div>
+	    
+	      <div class="cell">𝄛</div>
+	    
+	      <div class="cell">𝀠</div>
+	    
+	      <div class="cell">𝁂</div>
+	    
+	      <div class="cell">𝇒</div>
+	    
+	      <div class="cell">♫</div>
+	    
+	      <div class="cell">♭</div>
+	    
+	      <div class="cell">𝃵</div>
+	    
+	      <div class="cell">𝁜</div>
+	    
+	      <div class="cell">𝄒</div>
+	    
+	      <div class="cell">𝉄</div>
+	    
+	      <div class="cell">𝄇</div>
+	    
+	      <div class="cell">𝁪</div>
+	    
+	      <div class="cell">𝂟</div>
+	    
+	      <div class="cell">𝂀</div>
+	    
+	      <div class="cell">𝃖</div>
+	    
+	      <div class="cell">𝆶</div>
+	    
+	      <div class="cell">𝁭</div>
+	    
+	      <div class="cell">𝃬</div>
+	    
+	      <div class="cell">𝁶</div>
+	    
+	      <div class="cell">𝁺</div>
+	    
+	      <div class="cell">𝆍</div>
+	    
+	      <div class="cell">𝁐</div>
+	    
+	      <div class="cell">𝁿</div>
+	    
+	      <div class="cell">𝆖</div>
+	    
+	      <div class="cell">𝃨</div>
+	    
+	      <div class="cell">𝅵</div>
+	    
+	      <div class="cell">𝆢</div>
+	    
+	      <div class="cell">𝄠</div>
+	    
+	      <div class="cell">𝄎</div>
+	    
+	      <div class="cell">𝂺</div>
+	    
+	      <div class="cell">𝃲</div>
+	    
+	      <div class="cell">𝄟</div>
+	    
+	      <div class="cell">𝄶</div>
+	    
+	      <div class="cell">𝁳</div>
+	    
+	      <div class="cell">𝅂</div>
+	    
+	      <div class="cell">𝂑</div>
+	    
+	      <div class="cell">𝅙</div>
+	    
+	      <div class="cell">𝄋</div>
+	    
+	      <div class="cell">𝅅</div>
+	    
+	      <div class="cell">𝆵</div>
+	    
+	      <div class="cell">𝀒</div>
+	    
+	      <div class="cell">𝅘𝅥</div>
+	    
+	      <div class="cell">𝇚</div>
+	    
+	      <div class="cell">𝇔</div>
+	    
+	      <div class="cell">𝀂</div>
+	    
+	      <div class="cell">𝄻</div>
+	    
+	      <div class="cell">𝈦</div>
+	    
+	      <div class="cell">𝄀</div>
+	    
+	      <div class="cell">𝄥</div>
+	    
+	      <div class="cell">𝂙</div>
+	    
+	      <div class="cell">𝃴</div>
+	    
+	      <div class="cell">𝃩</div>
+	    
+	      <div class="cell">𝀋</div>
+	    
+	      <div class="cell">𝆞</div>
+	    
+	      <div class="cell">𝈛</div>
+	    
+	      <div class="cell">𝄩</div>
+	    
+	      <div class="cell">𝆐</div>
+	    
+	      <div class="cell">𝆛</div>
+	    
+	      <div class="cell">𝂉</div>
+	    
+	      <div class="cell">𝆺𝅥𝅯</div>
+	    
+	      <div class="cell">𝆔</div>
+	    
+	      <div class="cell">𝃦</div>
+	    
+	      <div class="cell">𝈔</div>
+	    
+	      <div class="cell">𝀜</div>
+	    
+	      <div class="cell">𝇠</div>
+	    
+	      <div class="cell">𝃊</div>
+	    
+	      <div class="cell">𝂏</div>
+	    
+	      <div class="cell">𝀉</div>
+	    
+	      <div class="cell">𝆠</div>
+	    
+	      <div class="cell">𝅈</div>
+	    
+	      <div class="cell">𝅍</div>
+	    
+	      <div class="cell">𝀲</div>
+	    
+	      <div class="cell">𝃣</div>
+	    
+	      <div class="cell">𝅝</div>
+	    
+	      <div class="cell">𝁧</div>
+	    
+	      <div class="cell">𝀇</div>
+	    
+	      <div class="cell">𝈤</div>
+	    
+	      <div class="cell">𝃍</div>
+	    
+	      <div class="cell">𝆚</div>
+	    
+	      <div class="cell">𝀾</div>
+	    
+	      <div class="cell">𝉁</div>
+	    
+	      <div class="cell">𝈏</div>
+	    
+	      <div class="cell">𝃠</div>
+	    
+	      <div class="cell">𝁑</div>
+	    
+	      <div class="cell">𝁲</div>
+	    
+	      <div class="cell">𝄖</div>
+	    
+	      <div class="cell">𝂷</div>
+	    
+	      <div class="cell">𝀼</div>
+	    
+	      <div class="cell">𝂣</div>
+	    
+	      <div class="cell">𝈶</div>
+	    
+	      <div class="cell">𝅎</div>
+	    
+	      <div class="cell">𝇕</div>
+	    
+	      <div class="cell">𝅜</div>
+	    
+	      <div class="cell">𝇌</div>
+	    
+	      <div class="cell">𝂛</div>
+	    
+	      <div class="cell">𝁤</div>
+	    
+	      <div class="cell">𝁣</div>
+	    
+	      <div class="cell">𝇃</div>
+	    
+	      <div class="cell">𝃇</div>
+	    
+	      <div class="cell">𝅐</div>
+	    
+	      <div class="cell">𝄂</div>
+	    
+	      <div class="cell">𝃧</div>
+	    
+	      <div class="cell"> </div>
+	    
+	      <div class="cell">𝁙</div>
+	    
+	      <div class="cell">𝄙</div>
+	    
+	      <div class="cell">𝁸</div>
+	    
+	      <div class="cell">𝈫</div>
+	    
+	      <div class="cell">𝈙</div>
+	    
+	      <div class="cell">𝈥</div>
+	    
+	      <div class="cell">𝆅</div>
+	    
+	      <div class="cell">𝁀</div>
+	    
+	      <div class="cell">𝄉</div>
+	    
+	      <div class="cell">𝀷</div>
+	    
+	      <div class="cell">𝃉</div>
+	    
+	      <div class="cell">𝅱</div>
+	    
+	      <div class="cell">𝈨</div>
+	    
+	      <div class="cell">𝅯</div>
+	    
+	      <div class="cell">𝄴</div>
+	    
+	      <div class="cell">𝁴</div>
+	    
+	      <div class="cell">𝂗</div>
+	    
+	      <div class="cell">𝃟</div>
+	    
+	      <div class="cell">𝃢</div>
+	    
+	      <div class="cell">𝈵</div>
+	    
+	      <div class="cell">𝆊</div>
+	    
+	      <div class="cell">𝄸</div>
+	    
+	      <div class="cell">𝈰</div>
+	    
+	      <div class="cell">𝆏</div>
+	    
+	      <div class="cell">𝄆</div>
+	    
+	      <div class="cell">𝆫</div>
+	    
+	      <div class="cell">𝁱</div>
+	    
+	      <div class="cell">𝄬</div>
+	    
+	      <div class="cell">𝁯</div>
+	    
+	      <div class="cell">𝀘</div>
+	    
+	      <div class="cell">𝂓</div>
+	    
+	      <div class="cell">𝃔</div>
+	    
+	      <div class="cell">𝈯</div>
+	    
+	      <div class="cell">𝄣</div>
+	    
+	      <div class="cell">𝈂</div>
+	    
+	      <div class="cell">𝁎</div>
+	    
+	      <div class="cell">𝁚</div>
+	    
+	      <div class="cell">𝈴</div>
+	    
+	      <div class="cell">𝀹</div>
+	    
+	      <div class="cell">𝀈</div>
+	    
+	      <div class="cell">𝇨</div>
+	    
+	      <div class="cell">𝇊</div>
+	    
+	      <div class="cell">𝇤</div>
+	    
+	      <div class="cell">𝀳</div>
+	    
+	      <div class="cell">𝈠</div>
+	    
+	      <div class="cell">𝄐</div>
+	    
+	      <div class="cell">𝈳</div>
+	    
+	      <div class="cell">𝇙</div>
+	    
+	      <div class="cell">𝁫</div>
+	    
+	      <div class="cell">𝃌</div>
+	    
+	      <div class="cell">𝃳</div>
+	    
+	      <div class="cell">𝂍</div>
+	    
+	      <div class="cell">𝄿</div>
+	    
+	      <div class="cell">𝃄</div>
+	    
+	      <div class="cell">𝃅</div>
+	    
+	      <div class="cell">𝅋</div>
+	    
+	      <div class="cell">𝈹</div>
+	    
+	      <div class="cell">𝆃</div>
+	    
+	      <div class="cell">𝃰</div>
+	    
+	      <div class="cell">𝀊</div>
+	    
+	      <div class="cell">𝂎</div>
+	    
+	      <div class="cell">𝄁</div>
+	    
+	      <div class="cell">𝂌</div>
+	    
+	      <div class="cell">𝄽</div>
+	    
+	      <div class="cell">𝀴</div>
+	    
+	      <div class="cell">𝀫</div>
+	    
+	      <div class="cell">𝁃</div>
+	    
+	      <div class="cell">𝄘</div>
+	    
+	      <div class="cell">𝃕</div>
+	    
+	      <div class="cell">𝄵</div>
+	    
+	      <div class="cell">𝈞</div>
+	    
+	      <div class="cell">𝁘</div>
+	    
+	      <div class="cell">𝀸</div>
+	    
+	      <div class="cell">𝃱</div>
+	    
+	      <div class="cell">𝈭</div>
+	    
+	      <div class="cell">𝅘𝅥𝅮</div>
+	    
+	      <div class="cell">𝅏</div>
+	    
+	      <div class="cell">𝈀</div>
+	    
+	      <div class="cell">𝇧</div>
+	    
+	      <div class="cell">𝀬</div>
+	    
+	      <div class="cell">𝂃</div>
+	    
+	      <div class="cell">𝂈</div>
+	    
+	      <div class="cell">𝂰</div>
+	    
+	      <div class="cell">𝃫</div>
+	    
+	      <div class="cell">𝀿</div>
+	    
+	      <div class="cell">𝉀</div>
+	    
+	      <div class="cell">𝂁</div>
+	    
+	      <div class="cell">𝆤</div>
+	    
+	      <div class="cell">𝂶</div>
+	    
+	      <div class="cell">𝃪</div>
+	    
+	      <div class="cell">𝇜</div>
+	    
+	      <div class="cell">𝄲</div>
+	    
+	      <div class="cell">𝄼</div>
+	    
+	      <div class="cell">𝃝</div>
+	    
+	      <div class="cell">𝀵</div>
+	    
+	      <div class="cell">𝅩</div>
+	    
+	      <div class="cell">𝃁</div>
+	    
+	      <div class="cell">𝀓</div>
+	    
+	      <div class="cell">𝂤</div>
+	    
+	      <div class="cell">𝃯</div>
+	    
+	      <div class="cell">𝆯</div>
+	    
+	      <div class="cell">𝈻</div>
+	    
+	      <div class="cell">𝁛</div>
+	    
+	      <div class="cell"></div>
+	    
+	      <div class="cell">𝃤</div>
+	    
+	      <div class="cell">𝆦</div>
+	    
+	      <div class="cell">𝈩</div>
+	    
+	      <div class="cell">𝇋</div>
+	    
+	      <div class="cell">𝅗</div>
+	    
+	      <div class="cell">𝆋</div>
+	    
+	      <div class="cell">𝃃</div>
+	    
+	      <div class="cell">𝄫</div>
+	    
+	      <div class="cell">𝇑</div>
+	    
+	      <div class="cell">𝃎</div>
+	    
+	      <div class="cell">𝃋</div>
+	    
+	      <div class="cell">𝇁</div>
+	    
+	      <div class="cell">𝁷</div>
+	    
+	      <div class="cell">𝄚</div>
+	    
+	      <div class="cell">𝅘𝅥𝅰</div>
+	    
+	      <div class="cell">𝂨</div>
+	    
+	      <div class="cell">𝃈</div>
+	    
+	      <div class="cell">𝈁</div>
+	    
+	      <div class="cell">𝁡</div>
+	    
+	      <div class="cell">𝁕</div>
+	    
+	      <div class="cell">𝈺</div>
+	    
+	      <div class="cell">𝂯</div>
+	    
+	      <div class="cell">𝈗</div>
+	    
+	      <div class="cell">𝀞</div>
+	    
+	      <div class="cell">𝁁</div>
+	    
+	      <div class="cell">𝁵</div>
+	    
+	      <div class="cell">𝇏</div>
+	    
+	      <div class="cell">𝅪</div>
+	    
+	      <div class="cell">𝇟</div>
+	    
+	      <div class="cell">𝇖</div>
+	    
+	      <div class="cell">𝅲</div>
+	    
+	      <div class="cell">𝈎</div>
+	    
+	      <div class="cell">𝂚</div>
+	    
+	      <div class="cell">𝆈</div>
+	    
+	      <div class="cell">𝇢</div>
+	    
+	      <div class="cell">𝄊</div>
+	    
+	      <div class="cell">𝁥</div>
+	    
+	      <div class="cell">𝂾</div>
+	    
+	      <div class="cell">𝆡</div>
+	    
+	      <div class="cell">𝈮</div>
+	    
+	      <div class="cell">𝇇</div>
+	    
+	      <div class="cell">𝀡</div>
+	    
+	      <div class="cell">𝁉</div>
+	    
+	      <div class="cell">𝆳</div>
+	    
+	      <div class="cell">𝀣</div>
+	    
+	      <div class="cell">𝈅</div>
+	    
+	      <div class="cell">𝆧</div>
+	    
+	      <div class="cell">𝆹𝅥</div>
+	    
+	      <div class="cell">𝀟</div>
+	    
+	      <div class="cell">𝆂</div>
+	    
+	      <div class="cell">𝀭</div>
+	    
+	      <div class="cell">𝀄</div>
+	    
+	      <div class="cell">𝅷</div>
+	    
+	      <div class="cell">𝈧</div>
+	    
+	      <div class="cell">𝂒</div>
+	    
+	      <div class="cell">𝅄</div>
+	    
+	      <div class="cell">𝂂</div>
+	    
+	      <div class="cell">𝈾</div>
+	    
+	      <div class="cell">𝈷</div>
+	    
+	      <div class="cell">𝂬</div>
+	    
+	      <div class="cell">𝆺𝅥𝅮</div>
+	    
+	      <div class="cell">𝂱</div>
+	    
+	      <div class="cell">𝅳</div>
+	    
+	      <div class="cell">𝈉</div>
+	    
+	      <div class="cell">𝈖</div>
+	    
+	      <div class="cell">𝈇</div>
+	    
+	      <div class="cell">𝀥</div>
+	    
+	      <div class="cell">𝄅</div>
+	    
+	      <div class="cell">𝈘</div>
+	    
+	      <div class="cell">𝄢</div>
+	    
+	      <div class="cell">𝈡</div>
+	    
+	      <div class="cell">𝁢</div>
+	    
+	      <div class="cell">𝄍</div>
+	    
+	      <div class="cell">𝇄</div>
+	    
+	      <div class="cell">𝀏</div>
+	    
+	      <div class="cell"> </div>
+	    
+	      <div class="cell">𝁨</div>
+	    
+	      <div class="cell">𝃮</div>
+	    
+	      <div class="cell">𝂧</div>
+	    
+	      <div class="cell">𝈟</div>
+	    
+	      <div class="cell">𝈃</div>
+	    
+	      <div class="cell">𝂠</div>
+	    
+	      <div class="cell">𝁼</div>
+	    
+	      <div class="cell">𝇛</div>
+	    
+	      <div class="cell">𝀯</div>
+	    
+	      <div class="cell">𝀚</div>
+	    
+	      <div class="cell">𝃥</div>
+	    
+	      <div class="cell">𝃡</div>
+	    
+	      <div class="cell">𝄜</div>
+	    
+	      <div class="cell">𝆪</div>
+	    
+	      <div class="cell">𝅌</div>
+	    
+	      <div class="cell">𝈿</div>
+	    
+	      <div class="cell">𝅃</div>
+	    
+	      <div class="cell">𝀙</div>
+	    
+	      <div class="cell">𝂳</div>
+	    
+	      <div class="cell">𝇎</div>
+	    
+	      <div class="cell">𝃚</div>
+	    
+	      <div class="cell">𝅫</div>
+	    
+	      <div class="cell">𝅻</div>
+	    
+	      <div class="cell">𝆰</div>
+	    
+	      <div class="cell">𝆭</div>
+	    
+	      <div class="cell">𝇦</div>
+	    
+	      <div class="cell">𝃒</div>
+	    
+	      <div class="cell">𝇂</div>
+	    
+	      <div class="cell">𝁦</div>
+	    
+	      <div class="cell">𝁝</div>
+	    
+	      <div class="cell">𝄞</div>
+	    
+	      <div class="cell">𝈬</div>
+	    
+	      <div class="cell">𝄔</div>
+	    
+	      <div class="cell">𝂹</div>
+	    
+	      <div class="cell">𝀩</div>
+	    
+	      <div class="cell">𝈚</div>
+	    
+	      <div class="cell">𝅒</div>
+	    
+	      <div class="cell">𝂝</div>
+	    
+	      <div class="cell">𝅆</div>
+	    
+	      <div class="cell">𝈢</div>
+	    
+	      <div class="cell">𝃐</div>
+	    
+	      <div class="cell">𝄳</div>
+	    
+	      <div class="cell">♪</div>
+	    
+	      <div class="cell">𝆇</div>
+	    
+	      <div class="cell">𝆙</div>
+	    
+	      <div class="cell">𝅀</div>
+	    
+	      <div class="cell">𝅊</div>
+	    
+	      <div class="cell">𝀢</div>
+	    
+	      <div class="cell">𝃆</div>
+	    
+	      <div class="cell">𝇥</div>
+	    
+	      <div class="cell">𝁋</div>
+	    
+	      <div class="cell">𝃘</div>
+	    
+	      <div class="cell">𝅦</div>
+	    
+	      <div class="cell">𝀰</div>
+	    
+	      <div class="cell">𝃗</div>
+	    
+	      <div class="cell">𝅉</div>
+	    
+	      <div class="cell">𝇪</div>
+	    
+	      <div class="cell">𝁌</div>
+	    
+	      <div class="cell">𝅘𝅥𝅯</div>
+	    
+	      <div class="cell">𝀪</div>
+	    
+	      <div class="cell">𝁊</div>
+	    
+	      <div class="cell">𝃀</div>
+	    
+	      <div class="cell">𝄤</div>
+	    
+	      <div class="cell">♩</div>
+	    
+	      <div class="cell">𝇈</div>
+	    
+	      <div class="cell">𝀦</div>
+	    
+	      <div class="cell">𝅸</div>
+	    
+	      <div class="cell">𝈣</div>
+	    
+	      <div class="cell">𝆨</div>
+	    
+	      <div class="cell">𝄪</div>
+	    
+	      <div class="cell">𝂆</div>
+	    
+	      <div class="cell">𝂴</div>
+	    
+	      <div class="cell">𝆌</div>
+	    
+	      <div class="cell">𝀅</div>
+	    
+	      <div class="cell">𝆄</div>
+	    
+	      <div class="cell">𝈜</div>
+	    
+	      <div class="cell">𝂭</div>
+	    
+	      <div class="cell">𝈒</div>
+	    
+	      <div class="cell">𝀖</div>
+	    
+	      <div class="cell">𝁽</div>
+	    
+	      <div class="cell">𝆸</div>
+	    
+	      <div class="cell">𝂕</div>
+	    
+	      <div class="cell">𝇞</div>
+	    
+	      <div class="cell">𝂡</div>
+	    
+	      <div class="cell">𝀁</div>
+	    
+	      <div class="cell">𝂐</div>
+	    
+	      <div class="cell">𝂫</div>
+	    
+	      <div class="cell">𝁍</div>
+	    
+	      <div class="cell">𝉂</div>
+	    
+	      <div class="cell">𝂄</div>
+	    
+	      <div class="cell">𝆴</div>
+	    
+	      <div class="cell">𝆲</div>
+	    
+	      <div class="cell">𝀍</div>
+	    
+	      <div class="cell">𝂢</div>
+	    
+	      <div class="cell">𝅔</div>
+	    
+	      <div class="cell">𝆆</div>
+	    
+	      <div class="cell">𝆑</div>
+	    
+	      <div class="cell">𝈈</div>
+	    
+	      <div class="cell">𝂇</div>
+	    
+	      <div class="cell"> </div>
+	    
+	      <div class="cell">𝂿</div>
+	    
+	      <div class="cell">𝅼</div>
+	    
+	      <div class="cell">𝁗</div>
+	    
+	      <div class="cell">𝁠</div>
+	    
+	      <div class="cell">𝂮</div>
+	    
+	      <div class="cell">𝂻</div>
+	    
+	      <div class="cell">♯</div>
+	    
+	      <div class="cell">𝀔</div>
+	    
+	      <div class="cell">𝆗</div>
+	    
+	      <div class="cell">𝁰</div>
+	    
+	      <div class="cell">𝄄</div>
+	    
+	      <div class="cell">𝈐</div>
+	    
+	      <div class="cell">𝅬</div>
+	    
+	      <div class="cell">𝇅</div>
+	    
+	      <div class="cell">𝂞</div>
+	    
+	      <div class="cell">𝅁</div>
+	    
+	      <div class="cell">𝂥</div>
+	    
+	      <div class="cell">𝅖</div>
+	    
+	      <div class="cell">𝅴</div>
+	    
+	      <div class="cell">𝆀</div>
+	    
+	      <div class="cell">𝈽</div>
+	    
+	      <div class="cell">𝇍</div>
+	    
+	      <div class="cell">𝇐</div>
+	    
+	      <div class="cell">𝃜</div>
+	    
+	      <div class="cell">𝅾</div>
+	    
+	      <div class="cell">𝇩</div>
+	    
+	      <div class="cell">𝅑</div>
+	    
+	      <div class="cell">𝅹</div>
+	    
+	      <div class="cell">𝉃</div>
+	    
+	      <div class="cell">𝁾</div>
+	    
+	      <div class="cell">𝀤</div>
+	    
+	      <div class="cell">𝆣</div>
+	    
+	      <div class="cell">𝈆</div>
+	    
+	      <div class="cell">𝂅</div>
+	    
+	      <div class="cell">𝅗𝅥</div>
+	    
+	      <div class="cell">𝆜</div>
+	    
+	      <div class="cell">𝇓</div>
+	    
+	      <div class="cell">𝃞</div>
+	    
+	      <div class="cell">𝆺𝅥</div>
+	    
+	      <div class="cell">𝀺</div>
+	    
+	      <div class="cell">𝆩</div>
+	    
+	      <div class="cell">𝄮</div>
+	    
+	      <div class="cell">𝃑</div>
+	    
+	      <div class="cell">𝅥</div>
+	    
+	      <div class="cell">𝁮</div>
+	    
+	      <div class="cell">𝆬</div>
+	    
+	      <div class="cell">𝀃</div>
+	    
+          </span>
+       </div>
+    
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+    
+	
+
+    </script>
+</html>

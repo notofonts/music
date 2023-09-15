@@ -2,7 +2,7 @@
                 <html lang="en">
                     <head>
                         <meta charset="utf-8">
-                        <title>Fontbakery Check Report</title>
+                        <title>FontBakery Check Report</title>
                         <style>
                             
             html {
@@ -59,8 +59,8 @@
                         </style>
                     </head>
                     <body>
-                    <h1>Fontbakery Technical Report</h1>
-<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+                    <h1>FontBakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/fonttools/fontbakery/issues'>https://github.com/fonttools/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
 <h2>Summary</h2>
             <table>
             <tr>
@@ -72,25 +72,40 @@
                 <th>✅ PASS</th>
             </tr>
             <tr>
-                <td>0</td>
+                <td>3</td>
                 <td>2</td>
                 <td>9</td>
-                <td>118</td>
-                <td>7</td>
+                <td>120</td>
+                <td>6</td>
                 <td>110</td>
             </tr>
             <tr>
-                <td>0%</td>
                 <td>1%</td>
-                <td>5%</td>
-                <td>65%</td>
+                <td>1%</td>
                 <td>4%</td>
-                <td>61%</td>
+                <td>48%</td>
+                <td>2%</td>
+                <td>44%</td>
             </tr>
             </table>
             
 <p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
-<h2>&lt;Section: Google Fonts&gt; 🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h2>&lt;Section: Google Fonts&gt; 💥💥🔥🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 achVendID.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vendor_id&gt;</div>
+
+<details><summary>💥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:registered_vendor_ids">FontBakeryCondition:registered_vendor_ids</a> had an error: ModuleNotFoundError: No module named 'bs4'</p>
+</span></li></ul></div></details>
+<h3>Show hinting filesize impact.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/hinting_impact&gt;</div>
+
+<details><summary>💥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:hinting_stats">FontBakeryCondition:hinting_stats</a> had an error: ModuleNotFoundError: No module named 'dehinter'</p>
+</span></li></ul></div></details>
+<h3>Version number has increased since previous release on Google Fonts?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/version_bump&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Version number 2.0030059814453125 is equal to version on Google Fonts GitHub repo.</p>
+</span></li></ul></div></details>
 <h3>Glyphs are similiar to Google Fonts version?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/production_glyphs_similarity&gt;</div>
 
@@ -107,14 +122,11 @@
 
 <details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]</p>
 </span></li></ul></div></details>
-<h2>&lt;Section: Universal&gt; 🔥⚠️⚠️⚠️⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
-<h3>Check font contains no unreachable glyphs</h3>
-<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+<h2>&lt;Section: Universal&gt; ⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Check if uppercase glyphs are vertically centered.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/caps_vertically_centered&gt;</div>
 
-<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- uni00A0.1
-</code></pre>
-<p>[code: unreachable-glyphs]</p>
+<details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Uppercase glyphs are not vertically centered in the em box. [code: vertical-metrics-not-centered]</p>
 </span></li></ul></div></details>
 <h3>Check if each glyph has the recommended amount of contours.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
@@ -125,17 +137,11 @@
 
 - Glyph name: uogonek	Contours detected: 2	Expected: 1
 
-- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
 - Glyph name: uogonek	Contours detected: 2	Expected: 1
 </code></pre>
 <p>[code: contour-count]</p>
-</span></li></ul></div></details>
-<h3>Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.</h3>
-<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_dotted&gt;</div>
-
-<details><summary>🔥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
-<p>The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]</p>
 </span></li></ul></div></details>
 <h3>Check math signs have the same width.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/math_signs_width&gt;</div>
@@ -176,7 +182,7 @@ U+1D165, U+1D166, U+1D16D, U+1D16E, U+1D16F, U+1D170, U+1D171 and U+1D172 [code:
 
 * u1D0B5 (U+1D0B5): L&lt;&lt;106.0,131.0&gt;--&lt;106.0,134.0&gt;&gt; -&gt; L&lt;&lt;106.0,134.0&gt;--&lt;110.0,226.0&gt;&gt;
 
-* u1D1E9 (U+1D1E9): L&lt;&lt;226.0,216.0&gt;--&lt;275.0,179.0&gt;&gt; -&gt; L&lt;&lt;275.0,179.0&gt;--&lt;314.0,150.0&gt;&gt; 
+* u1D1E9 (U+1D1E9): L&lt;&lt;226.0,216.0&gt;--&lt;275.0,179.0&gt;&gt; -&gt; L&lt;&lt;275.0,179.0&gt;--&lt;314.0,150.0&gt;&gt;
 
 * u1D1E9 (U+1D1E9): L&lt;&lt;314.0,150.0&gt;--&lt;275.0,121.0&gt;&gt; -&gt; L&lt;&lt;275.0,121.0&gt;--&lt;226.0,84.0&gt;&gt; [code: found-colinear-vectors]
 </code></pre>
@@ -203,7 +209,7 @@ U+1D165, U+1D166, U+1D16D, U+1D16E, U+1D16F, U+1D170, U+1D171 and U+1D172 [code:
 
 * u1D0AE (U+1D0AE): B&lt;&lt;266.5,445.0&gt;-&lt;253.0,438.0&gt;-&lt;226.0,434.0&gt;&gt;/B&lt;&lt;226.0,434.0&gt;-&lt;237.0,433.0&gt;-&lt;244.5,430.0&gt;&gt; = 13.621397929215435
 
-* u1D0B2 (U+1D0B2): B&lt;&lt;409.0,203.0&gt;-&lt;409.0,217.0&gt;-&lt;416.0,242.0&gt;&gt;/B&lt;&lt;416.0,242.0&gt;-&lt;403.0,206.0&gt;-&lt;355.0,206.0&gt;&gt; = 4.212967912112212 
+* u1D0B2 (U+1D0B2): B&lt;&lt;409.0,203.0&gt;-&lt;409.0,217.0&gt;-&lt;416.0,242.0&gt;&gt;/B&lt;&lt;416.0,242.0&gt;-&lt;403.0,206.0&gt;-&lt;355.0,206.0&gt;&gt; = 4.212967912112212
 
 * 7 more.
 </code></pre>
@@ -213,10 +219,16 @@ U+1D165, U+1D166, U+1D16D, U+1D16E, U+1D16F, U+1D170, U+1D171 and U+1D172 [code:
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
 
 <details><summary>⚠️ <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
-<pre><code>* u1D096 (U+1D096): L&lt;&lt;485.0,581.0&gt;--&lt;362.0,582.0&gt;&gt; 
+<pre><code>* u1D096 (U+1D096): L&lt;&lt;485.0,581.0&gt;--&lt;362.0,582.0&gt;&gt;
 
 * u1D0A1 (U+1D0A1): L&lt;&lt;518.0,484.0&gt;--&lt;396.0,485.0&gt;&gt; [code: found-semi-vertical]
 </code></pre>
+</span></li></ul></div></details>
+<h2>&lt;Section: Shaping Checks&gt; 💥⏩⏩⏩</h2>
+<h3>Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_dotted&gt;</div>
+
+<details><summary>💥 <strong>fonts/NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>Failed with ModuleNotFoundError: No module named 'shaperglot'</p>
 </span></li></ul></div></details>
                     </body>
                 </html>

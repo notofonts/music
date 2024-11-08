@@ -1392,7 +1392,7 @@ fontMaster = (
 {
 axesValues = (
 100,
-5
+100
 );
 customParameters = (
 {
